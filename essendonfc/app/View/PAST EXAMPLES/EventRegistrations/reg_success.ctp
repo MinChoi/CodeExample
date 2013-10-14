@@ -1,0 +1,1 @@
+<div class="page-title">Event RSVP.</div><p>Your request has been sent to DCA to confirm that you are an employee of a DCA member organisation. Once approved, your event registration will be confirmed and your account login details will be emailed to you.If there is a cost for members to attend this event, you will also receive an invoice for payment.</p>

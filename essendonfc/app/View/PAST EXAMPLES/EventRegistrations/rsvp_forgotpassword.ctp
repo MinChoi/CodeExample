@@ -1,0 +1,1 @@
+<?	if(isset($fmsg)){		echo '<font style="color:#00DD00;padding-left:12px;">Password sent, check your mail for login details.</font>';			}	if(isset($femsg)){		echo '<font style="color:#DD0000;padding-left:12px;">Please enter a valid email.</font>';			}		?>	

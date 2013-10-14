@@ -1,0 +1,1 @@
+<?=$this->Form->input('Widget.Widget',array('multiple'=>'checkbox','label'=>false,'options'=>$widgets));?>

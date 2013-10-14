@@ -1,0 +1,156 @@
+/* ------------------------------------------------------------------ *\
+Component: Forms;
+Version: 1.0.0;
+Author: Traffic;
+Author URI: http://traffic.com.au/;
+
+Base styles for the forms
+\* ------------------------------------------------------------------ */
+
+/* GENERIC ---------------------------------------------------------- */
+
+
+body .gform_wrapper input[type=text], 
+body .gform_wrapper input[type=url], 
+body .gform_wrapper input[type=email], 
+body .gform_wrapper input[type=tel], 
+body .gform_wrapper input[type=number], 
+body .gform_wrapper input[type=password],
+body .gform_wrapper textarea {
+	font-size: 14px;
+	padding: 5px 10px;
+	
+	color: #7d7d7d;
+	border: 1px solid #CCCCCC;
+	
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+body .gform_wrapper .gfield_required {
+	color: #00b4f1;
+}
+
+
+/* GENERIC: ERRORS -------------------------------------------------- */
+
+
+body .gform_wrapper .top_label .gfield_error {
+	width: 100%;
+}
+
+body .gform_wrapper div.validation_error {
+	font-weight: normal;
+	padding: 14px;
+	margin-bottom: 0;
+	background: #FFDFE0;
+	line-height: 19px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+
+body .gform_wrapper li.gfield.gfield_error {
+	border: none;
+}
+
+body .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label, 
+body .gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container {
+	margin: 0;
+}
+
+body .gform_wrapper .top_label .gfield_description.validation_message, 
+body .gform_wrapper .gfield_description.validation_message {
+	margin: 0;
+	padding: 5px 0 !important;
+}
+
+
+/* GENERIC: SUCCESS ------------------------------------------------- */
+
+
+body .gform_confirmation_wrapper  {
+	padding: 20px;
+	color: #477d39;
+	background: #d6ffca;
+}
+
+
+/* CONTACT FORM -------------------------------------------------------- */
+
+body .gform_wrapper .gform_body .gfield_label {
+	margin-bottom: 5px;
+	color: #898989;
+	font-weight: 300;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+}
+
+body .gform_wrapper .gform_body input[type="text"], 
+body .gform_wrapper .gform_body input[type="email"], 
+body .gform_wrapper .gform_body input[type="tel"], 
+body .gform_wrapper .top_label textarea.textarea {
+    background-color: #808080;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0 0 5px;
+    padding: 9px 10px;
+	width: 100%;
+	font-family: Arial, sans-serif;
+}
+
+.gform_wrapper .gform_footer input[type="submit"]  {
+	background-color: #EC1C24;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: 'Oswald',sans-serif;
+    font-size: 15px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+	border: none;
+}
+
+.gform_wrapper .gform_footer input[type="submit"]:hover  {
+	background: #B71D17;
+
+}
+
+.gform_wrapper .gform_footer {
+	padding: 0;
+	margin: 0;
+}
+
+.gform_footer {
+	text-align: right;
+}
+
+body .gform_wrapper .gfield_required {
+    color: #EE2E24;
+	margin-left: 2px;
+}
+
+body .gform_wrapper .contact-services > label {
+	margin-bottom: 10px !important;
+}
+
+body .gform_wrapper .gfield_checkbox li {
+	width: 50%;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+body .gform_wrapper .gfield_checkbox li label {
+	font-size: 13px;
+	color: #898989;
+	font-family: Arial, sans-serif;
+}
+
+
+/* NAVIGATION MOBILE VIEW ------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+	body .gform_wrapper .gfield_checkbox li {
+		width: 100%;
+	}
+}

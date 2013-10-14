@@ -1,0 +1,342 @@
+/* ------------------------------------------------------------------ *\
+Component: Layout;
+Version: 1.0.0;
+Author: Traffic;
+Author URI: http://traffic.com.au/;
+
+Base styles for the layout
+\* ------------------------------------------------------------------ */
+
+
+/* Generic ---------------------------------------------------------- */
+
+
+body {
+	background: #252525 url(../images/background-s.png) top center no-repeat;
+	font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+	color: #252525;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+h4 {
+	color: #7d7d7d;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+p {
+	color: #898989;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+}
+
+.page-detail li {
+	color: #898989;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+	margin-left: 20px;	
+}
+
+.short-desc {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+}
+
+.row {
+	max-width: 73.5em;
+	padding: 0 14px;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	.row {
+		padding: 0;
+	}
+
+}
+
+section .row .column {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+/* Header ----------------------------------------------------------- */
+
+
+.header {
+	margin: 0 auto;
+	/*background-color: #000000*/;
+}
+
+.header .row {
+	background: #000000 url(../images/background-header.png) no-repeat left top;
+}
+
+.header .row .column {
+	padding: 0;
+}
+
+.header .background-left {
+   background: #ec1c24;
+   width: 50%;
+   position: absolute;
+   left: 0px;
+   height: 118px;
+   z-index: -1;
+}
+
+.header .background-right {
+   background: #000000;
+   width: 50%;
+   position: absolute;
+   right: 0px;
+   height: 118px;
+   z-index: -1;
+}
+
+.header .logo h1 {
+	width: 209px;
+	height: 88px;
+	margin: 15px 0;
+	background: url(../images/logo.png) 0 0 no-repeat;
+	background-size: contain;
+}
+
+.header .logo span {
+	display: none;
+}
+
+.header .login {
+	margin: 25px 5px 25px 0;
+    padding-left: 20px;
+	background: url(../images/login.png) left -56px no-repeat;    
+	color: #7d7d7d;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.header .login:hover {
+	background: url(../images/login.png) left 0 no-repeat;    
+	color: #3d3d3d;
+}
+
+
+/* NAVIGATION MOBILE VIEW ------------------------------------------- */
+
+
+@media only screen and (max-width: 767px) {
+
+	.header .row {
+		background: #000000 url(../images/background-header.png) no-repeat -40px top;
+	}
+
+	.header .row .column {
+		padding: 0 10px;
+	}
+	
+	.header .row .header-right {
+		background: #000000;
+	}
+	
+	.header .background-left {
+		height: 98px;
+	}
+
+	.header .background-right {
+		height: 98px;
+	}
+	
+	.header .logo h1 {
+		width: 145px;
+		height: 63px;
+	 	margin: 17px 0;
+		display: inline-block;
+	}
+
+	.header .login {
+		position: absolute;
+		right: 5px;
+		top: -100px;
+		text-align: right;
+	}
+	
+}
+
+
+/* footer ------------------------------------------------------------ */
+
+
+.footer {
+	min-height: 290px;
+	background: url(../images/footer-background.png) right bottom no-repeat #636363;
+	color: #bebebe;
+	font-size: 15px;
+}
+
+.footer li {
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.footer li a {
+	color: #bebebe;
+}
+
+.footer a:hover {
+	color: #3d3d3d;
+}
+
+.footer ul {
+	margin-top: 28px;
+}
+
+.footer .copyright-traffic {
+	margin-top: 5px;
+	line-height: 20px;
+	font-weight: 300;
+}
+
+.footer .footer-contact {
+	margin: 28px 0;
+	display: block;
+	line-height: 23px;
+	text-transform: uppercase;
+}
+
+
+.footer form[role=search] input[type="text"] {
+	float: left;
+    background: none repeat scroll 0 0 #FFFFFF;
+	padding: 5px 8px;
+    width: 100%;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
+    color: #3D3D3D;    
+}
+
+.footer form[role=search] .button {
+	margin-left: -28px;
+	height: 25px;
+	width: 25px;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	background: #ffffff url(../images/icon-search.png) center center no-repeat;
+	padding-left: 10px;
+}
+
+
+.footer form input {
+	margin-bottom: 10px;
+}
+
+.footer a {
+	color: #bebebe;
+}
+
+/* NAVIGATION MOBILE VIEW ------------------------------------------- */
+
+/* To display email address correctly in tiny screen size */
+@media only screen and (max-width: 500px) {
+	
+	.footer .small-6 {
+		width: 100%;
+	}
+	
+}
+
+/* SIDEBAR ----------------------------------------------------------- */
+
+
+.sidebar h3 {
+	margin: 15px 0;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #7d7d7d;
+}
+
+.sidebar ul {
+	list-style: inside url(../images/icon-arrow.png);
+}
+
+.sidebar li, .sidebar li a {
+	font-family: Arial, sans-serif;
+	color: #898989;
+	font-size: 14px;
+}
+
+.sidebar li a:hover, .sidebar .current-cat a {
+	color: #ec1c24;
+}
+.sidebar .hover, .sidebar .current-cat {
+	list-style: inside url(../images/icon-arrow-red.png);
+}
+
+/* SEARCH ----------------------------------------------------------- */
+
+.search .main h3 {
+	margin-top: 100px;
+}
+
+form[role=search] {
+	position: relative;
+	width: 100%;
+	padding: 3px;
+	background: #636363;
+	border-radius: 5px;
+}
+
+form[role=search] input {
+	outline: none;
+	border: none;
+	background: none;
+}
+
+form[role=search] input[type="text"] {
+	width: 100%;
+	font-size: 14px;
+	padding: 3px 30px 3px 10px;
+	color: #FFFFFF;
+}
+
+form[role=search] input[type="submit"] {
+	position: absolute;
+	top: 4px;
+	right: 3px;
+	width: 25px;
+	text-indent: -9999px;
+	background: url(../images/icon-magnify-white.png) center center no-repeat;
+}
+
+.search-excerpt {
+	color: #EC1C24;
+}
+
+form[role=search] .inner-content > article {
+	margin-top: 30px;
+}
+
+.footer form[role="search"] {
+	padding: 0;
+}
+
+/* NAVIGATION MOBILE VIEW ------------------------------------------- */
+
+
+@media only screen and (max-width: 767px) {
+	.search .main h3 {
+		margin-top: 20px;	
+	}
+}	

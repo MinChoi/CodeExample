@@ -1,0 +1,1 @@
+{"gname": "<?=$member['Member']['gname'];?>", "lname": "<?=$member['Member']['lname'];?>", "position": "<?=$member['Member']['position'];?>","email":"<?=$member['Member']['email'];?>","phone":"<?=$member['Member']['phonenumber'];?>"}

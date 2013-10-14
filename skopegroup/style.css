@@ -1,0 +1,23 @@
+/*
+Theme Name: Skeleton
+Theme URI: http://github.com/joshbenham/wordpress-theme-skeleton
+Author: Josh Benham
+Author URI: http://joshbenham.net/
+Description:
+License:
+License URI:
+Tags:
+Text Domain: skeleton
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* -------------------------------- *\
+ * SCAFFOLD
+\* -------------------------------- */
+
+
+aside[role="complementary"] {
+	margin: 5px 0 5px 0;
+}

@@ -1,0 +1,127 @@
+<?php
+/**
+ * Element to display a two-level navigation list.  Outputs the necessary
+ * <UL><LI><A> tags
+ * 
+ * Make sure to include the /CORE/css/dropdown_menu.css file to get CSS drop-downs working quickly.
+ * 
+ * Simply pass in the variable $sitemap = [integer] to set which menu to use
+ * (or leave empty to use the default main menu)
+ * 
+ * VARIABLES:
+ * 	$sitemap (int) - sitemap_id to query from database (or leave empty to use the default: 1)
+ *  $class (string) - additional class(es) for root <UL> element [optional]
+ */ 
+ 
+//---------- Updated Navbar Code, by Simon (lot less code than previous version!) ---------------
+//if ($this->name == 'CakeError') return;
+// Query database for list of pages & links (stored in same DB table)
+// Select all pages (and links) that are at root level, and are published, and set to be displayed in menu
+
+if (!function_exists('getMenuItems')) {			
+function getMenuItems($conditions) {
+	$conditions = $conditions + array(
+									'showatmenu' => 1, 
+									'published' => 1
+									);
+	$menuItems = ClassRegistry::Init('Page')->find('all', array(
+		'order' => 'Page.porder', 
+		'recursive' => 1,
+		'contain' => array('ChildPage' => array('conditions' => array(
+																	'showatmenu' => 1, 
+																	'published' => 1
+																	),
+												'order' => 'porder')),
+		'conditions' => $conditions, 	// parent page == root
+	));
+
+	return $menuItems;	
+}}
+if (!function_exists('generateLink')) {			
+function generateLink($pageObject, $parent_ids, $here) {
+	// If menu_name (menu label) is blank, use name (page title)
+	$linkText = ($pageObject['menu_name']) ? $pageObject['menu_name'] : $pageObject['name'];
+	$active = (in_array($pageObject['id'], $parent_ids)||$here==$pageObject['link'])?' class="active"':"";
+	// Open links in new window if they begin with http://
+	$target = (strpos($pageObject['link'], 'http://') === 0) ? '_blank' : '';
+	return '<li '.$active.'><a '.$active.' target="'.$target.'" href="' . $pageObject['link'] . '">' . $linkText . '</a>';
+}}
+
+$tmp_page = ClassRegistry::Init('Page');
+$parent_ids = $tmp_page->getParents(isset($page['Page']['id'])?$page['Page']['id']:1);
+
+if(isset($start_page)&&$start_page>0){
+	$p_id = $start_page;
+}elseif(isset($start_level) && $start_level==2){
+	$parent = $page;
+	for ($__i=0;$__i<5;$__i++){
+	//	$parent_ids[] = $parent['Page']['id'];
+		if($parent['Page']['page_id']==='1'){
+			break;
+		}
+		$parent = $tmp_page->find('first', array('conditions'=>array('Page.id'=>$parent['Page']['page_id']),
+															'fields'=>'Page.id, Page.page_id'));
+	}
+	$p_id = $parent['Page']['id'];
+}else{
+	$p_id = 1;
+}
+$conditions = array(
+	'page_id' => $p_id,
+	'sitemap_id' => isset($sitemap) ? $sitemap : 1		// use main menu unless another value is passed to this element
+);
+$menuItems = getMenuItems($conditions);
+
+if(!isset($sub_menu)) $sub_menu = 1;
+// debug($menuItems);
+
+// Display link to home page
+// if($this->here == '/')
+	// echo '<li><a class="active" href="/">Home</a></li>';
+// else
+	// echo '<li><a href="/">Home</a></li>';
+
+/// Loop through top-level pages
+foreach($menuItems as $m) {		
+	//echo '<li>';
+	echo generateLink($m['Page'], $parent_ids, $this->here);	
+	
+	if(count($m['ChildPage'])>0 && $sub_menu>=1){
+		echo '<ul>';
+		
+		/// Loop through second-level pages
+		foreach ($m['ChildPage'] as $subItem) {
+			//echo '<li>';
+			echo generateLink($subItem, $parent_ids, $this->here);
+
+			$subs = getMenuItems(array('Page.page_id'=>$subItem['id']));
+			if(count($subs)>0 && $sub_menu>=2){
+				echo '<ul>';
+				/// Loop through third-level pages
+				foreach ($subs as $subItem2) {
+					//echo '<li>';
+					echo generateLink($subItem2['Page'], $parent_ids, $this->here).'</li>';
+				}
+				echo '</ul>';
+			}
+			echo '</li>';
+		}
+		echo '</ul>';
+	}
+	// This part is only for Service (Silcar project)
+	elseif($m['Page']['link']=='/services.html'){
+		echo '<ul>';
+		echo $this->element('frontend/other_nav', array('type'=>'Service'));
+		echo '</ul>';
+	}
+	// This part is only for Industry (Silcar project)
+	elseif($m['Page']['link']=='/industries.html'){
+		echo '<ul>';
+		echo $this->element('frontend/other_nav', array('type'=>'Industry'));
+		echo '</ul>';
+	}
+	elseif($m['Page']['link']=='/projects'){
+		echo '<ul>', $this->element('frontend/other_nav', array('type'=>'Project')), '</ul>';
+	}
+	echo '</li>';			
+}

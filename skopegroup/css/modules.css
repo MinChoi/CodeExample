@@ -1,0 +1,203 @@
+/* ------------------------------------------------------------------ *\
+Component: Modules;
+Version: 1.0.0;
+Author: Traffic;
+Author URI: http://traffic.com.au/;
+
+Base styles for the modules
+\* ------------------------------------------------------------------ */
+
+/* Generic ---------------------------------------------------------- */
+
+
+
+
+/* NAVIGATION ------------------------------------------------------- */
+.navigation .menu-container a {
+	display: block;
+	padding: 5px 5px 5px 7px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	white-space: nowrap;
+}
+
+.navigation-toggle.toggle-open .toggle {
+	color: #FF0000;
+	background-position: right 0;
+}
+
+.navigation .menu-container .menu-item a:hover,
+.navigation .menu-container .current-menu-item > a,
+.navigation .menu-container .current-menu-parent > a {
+	color: #EE2E24;
+}
+
+.navigation .menu-container .menu-item {
+	list-style: none;
+}
+
+
+/* NAVIGATION MOBILE VIEW ------------------------------------------- */
+
+
+@media only screen and (max-width: 767px) {
+	
+	.navigation-toggle {
+		position: absolute;
+		right: 9px;
+		text-align: right;
+		top: 60px;
+		z-index: 10;
+	}
+
+	.navigation-toggle .toggle {
+		display: block;
+		height: 16px;
+		line-height: 16px;
+		padding-left: 21px;
+		color: #7D7D7D;
+		/*background: url("../images/icons-toggle.png") no-repeat scroll left center transparent;*/
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+
+	.navigation-toggle .toggle:hover {
+		color: #3d3d3d;
+	}
+	
+	.navigation-toggle.toggle-open .toggle {
+		color: #FFFFFF;
+		background-position: right 0;
+	}
+
+	.navigation .menu-container {
+		display: none;
+	}
+
+	.navigation .navigation-open {
+		display: block;
+	}
+
+}
+
+
+/* NAVIGATION DESKTOP VIEW ------------------------------------------ */
+
+
+@media only screen and (min-width: 768px) {
+	
+	.row .navigation {
+		padding-right: 0;
+		margin-top: 65px;
+	}
+
+	.navigation .menu-container {
+		float: right;
+	}
+
+	.navigation .menu-container .menu > .menu-item:first-child a {
+		padding-left: 20px;
+		background: url(../images/menu-home.png) left center no-repeat;    
+	}
+
+	.navigation .menu-container .current-menu-item.menu-item:first-child a,
+	.navigation .menu-container .menu-item:first-child a:hover {
+		background-position: -100px center;
+	}
+
+	.navigation-toggle {
+		display: none;
+	}
+
+	.navigation .menu-container .menu-item {
+		position: relative;
+		float: left;
+	}
+
+	.navigation .menu-container .sub-menu {
+		display: none;
+		position: absolute;
+		left: -30px;
+		top: auto;
+		min-width: 100%;
+		background: #636363;
+		padding: 10px;
+		z-index: 5;
+	}
+	
+	.navigation .menu-container .sub-menu .current-menu-item > a,
+	.navigation .menu-container .sub-menu a:hover {
+		color: #121212;
+	}
+
+	.navigation .menu-container .menu-item:hover > .sub-menu {
+		display: block;
+	}
+
+	.navigation .menu-container .sub-menu .menu-item {
+		float: none;
+	}
+}
+
+
+/* SUB NAVIGATION VIEW --------------------------------------------- */
+
+.sub-nav {
+	list-style: none;
+}
+
+.sub-nav li {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.sub-nav .parent_page {
+	margin-left: 0;	
+}
+
+.sub-nav a {
+	color: #7d7d7d;
+}
+
+.sub-nav a:hover, .sub-nav .current_page_item a,
+.back-parent:hover {
+	color: #3d3d3d;
+}
+
+.back-parent {
+	color: #7d7d7d;
+}
+
+	
+/* NAVIGATION MOBILE VIEW ------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+
+	.sub-nav li {
+		float: left;
+		margin: 0 10px 10px;
+	}
+	
+}
+
+/* SEARCH PAGINATION ------------------------------------------------ */
+
+.pagination {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.pagination > * {
+	margin: 0 10px;
+}
+
+.pagination span {
+	color: #EC1C24;
+}
+
+.pagination a {
+	color: #000000;
+}

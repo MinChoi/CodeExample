@@ -1,0 +1,1 @@
+<div class="page-title">Event RSVP</div><? if($new_reg) { ?><p>Thanks you have RSVP'd to this event.</p><? } else { ?><p>You have already registered to this event.</p><? }  ?>

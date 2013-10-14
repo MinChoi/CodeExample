@@ -1,0 +1,84 @@
+[30-Apr-2013 10:08:00 Australia/Melbourne] PHP Warning:  _cake_core_ cache was unable to write 'cake_dev_en-us' to File cache in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php on line 310
+[30-Apr-2013 10:08:00 Australia/Melbourne] PHP Warning:  /home/mbrands/public_html/skope/app/tmp/cache/persistent/ is not writable in /home/mbrands/public_html/skope/lib/Cake/Cache/Engine/FileEngine.php on line 337
+[30-Apr-2013 10:08:00 Australia/Melbourne] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_core_ is not properly configured.' in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php:166
+Stack trace:
+#0 /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php(136): Cache::_buildEngine('_cake_core_')
+#1 /home/mbrands/public_html/skope/app/Config/core.php(342): Cache::config('_cake_core_', Array)
+#2 /home/mbrands/public_html/skope/lib/Cake/Core/Configure.php(77): include('/home/mbrands/p...')
+#3 /home/mbrands/public_html/skope/lib/Cake/bootstrap.php(170): Configure::bootstrap(true)
+#4 /home/mbrands/public_html/skope/app/webroot/index.php(91): include('/home/mbrands/p...')
+#5 {main}
+  thrown in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php on line 166
+[30-Apr-2013 10:08:02 Australia/Melbourne] PHP Warning:  _cake_core_ cache was unable to write 'cake_dev_en-us' to File cache in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php on line 310
+[30-Apr-2013 10:08:02 Australia/Melbourne] PHP Warning:  /home/mbrands/public_html/skope/app/tmp/cache/persistent/ is not writable in /home/mbrands/public_html/skope/lib/Cake/Cache/Engine/FileEngine.php on line 337
+[30-Apr-2013 10:08:02 Australia/Melbourne] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_core_ is not properly configured.' in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php:166
+Stack trace:
+#0 /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php(136): Cache::_buildEngine('_cake_core_')
+#1 /home/mbrands/public_html/skope/app/Config/core.php(342): Cache::config('_cake_core_', Array)
+#2 /home/mbrands/public_html/skope/lib/Cake/Core/Configure.php(77): include('/home/mbrands/p...')
+#3 /home/mbrands/public_html/skope/lib/Cake/bootstrap.php(170): Configure::bootstrap(true)
+#4 /home/mbrands/public_html/skope/app/webroot/index.php(91): include('/home/mbrands/p...')
+#5 {main}
+  thrown in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php on line 166
+[30-Apr-2013 10:08:20 Australia/Melbourne] PHP Warning:  _cake_core_ cache was unable to write 'cake_dev_en-us' to File cache in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php on line 310
+[30-Apr-2013 10:08:20 Australia/Melbourne] PHP Warning:  /home/mbrands/public_html/skope/app/tmp/cache/persistent/ is not writable in /home/mbrands/public_html/skope/lib/Cake/Cache/Engine/FileEngine.php on line 337
+[30-Apr-2013 10:08:20 Australia/Melbourne] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_core_ is not properly configured.' in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php:166
+Stack trace:
+#0 /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php(136): Cache::_buildEngine('_cake_core_')
+#1 /home/mbrands/public_html/skope/app/Config/core.php(342): Cache::config('_cake_core_', Array)
+#2 /home/mbrands/public_html/skope/lib/Cake/Core/Configure.php(77): include('/home/mbrands/p...')
+#3 /home/mbrands/public_html/skope/lib/Cake/bootstrap.php(170): Configure::bootstrap(true)
+#4 /home/mbrands/public_html/skope/app/webroot/index.php(91): include('/home/mbrands/p...')
+#5 {main}
+  thrown in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php on line 166
+[30-Apr-2013 10:08:21 Australia/Melbourne] PHP Warning:  _cake_core_ cache was unable to write 'cake_dev_en-us' to File cache in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php on line 310
+[30-Apr-2013 10:08:21 Australia/Melbourne] PHP Warning:  /home/mbrands/public_html/skope/app/tmp/cache/persistent/ is not writable in /home/mbrands/public_html/skope/lib/Cake/Cache/Engine/FileEngine.php on line 337
+[30-Apr-2013 10:08:21 Australia/Melbourne] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_core_ is not properly configured.' in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php:166
+Stack trace:
+#0 /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php(136): Cache::_buildEngine('_cake_core_')
+#1 /home/mbrands/public_html/skope/app/Config/core.php(342): Cache::config('_cake_core_', Array)
+#2 /home/mbrands/public_html/skope/lib/Cake/Core/Configure.php(77): include('/home/mbrands/p...')
+#3 /home/mbrands/public_html/skope/lib/Cake/bootstrap.php(170): Configure::bootstrap(true)
+#4 /home/mbrands/public_html/skope/app/webroot/index.php(91): include('/home/mbrands/p...')
+#5 {main}
+  thrown in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php on line 166
+[30-Apr-2013 10:08:28 Australia/Melbourne] PHP Warning:  _cake_core_ cache was unable to write 'cake_dev_en-us' to File cache in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php on line 310
+[30-Apr-2013 10:08:28 Australia/Melbourne] PHP Warning:  /home/mbrands/public_html/skope/app/tmp/cache/persistent/ is not writable in /home/mbrands/public_html/skope/lib/Cake/Cache/Engine/FileEngine.php on line 337
+[30-Apr-2013 10:08:28 Australia/Melbourne] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_core_ is not properly configured.' in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php:166
+Stack trace:
+#0 /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php(136): Cache::_buildEngine('_cake_core_')
+#1 /home/mbrands/public_html/skope/app/Config/core.php(342): Cache::config('_cake_core_', Array)
+#2 /home/mbrands/public_html/skope/lib/Cake/Core/Configure.php(77): include('/home/mbrands/p...')
+#3 /home/mbrands/public_html/skope/lib/Cake/bootstrap.php(170): Configure::bootstrap(true)
+#4 /home/mbrands/public_html/skope/app/webroot/index.php(91): include('/home/mbrands/p...')
+#5 {main}
+  thrown in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php on line 166
+[30-Apr-2013 10:08:40 Australia/Melbourne] PHP Warning:  /home/mbrands/public_html/skope/app/tmp/cache/models/ is not writable in /home/mbrands/public_html/skope/lib/Cake/Cache/Engine/FileEngine.php on line 337
+[30-Apr-2013 10:08:40 Australia/Melbourne] PHP Fatal error:  Uncaught exception 'CacheException' with message 'Cache engine _cake_model_ is not properly configured.' in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php:166
+Stack trace:
+#0 /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php(136): Cache::_buildEngine('_cake_model_')
+#1 /home/mbrands/public_html/skope/app/Config/core.php(354): Cache::config('_cake_model_', Array)
+#2 /home/mbrands/public_html/skope/lib/Cake/Core/Configure.php(77): include('/home/mbrands/p...')
+#3 /home/mbrands/public_html/skope/lib/Cake/bootstrap.php(170): Configure::bootstrap(true)
+#4 /home/mbrands/public_html/skope/app/webroot/index.php(91): include('/home/mbrands/p...')
+#5 {main}
+  thrown in /home/mbrands/public_html/skope/lib/Cake/Cache/Cache.php on line 166
+[14-Jun-2013 13:33:09 Australia/Melbourne] PHP Warning:  Unterminated comment starting line 80 in /home/mbrands/public_html/skope/app/Controller/UsersController.php on line 80
+[14-Jun-2013 13:33:09 Australia/Melbourne] PHP Parse error:  syntax error, unexpected $end in /home/mbrands/public_html/skope/app/Controller/UsersController.php on line 187
+[14-Jun-2013 13:33:14 Australia/Melbourne] PHP Warning:  Unterminated comment starting line 80 in /home/mbrands/public_html/skope/app/Controller/UsersController.php on line 80
+[14-Jun-2013 13:33:14 Australia/Melbourne] PHP Parse error:  syntax error, unexpected $end in /home/mbrands/public_html/skope/app/Controller/UsersController.php on line 187
+[18-Jun-2013 14:33:09 Australia/Melbourne] PHP Fatal error:  Call to undefined function finfo_open() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 2
+[18-Jun-2013 14:33:11 Australia/Melbourne] PHP Fatal error:  Call to undefined function finfo_open() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 2
+[18-Jun-2013 14:33:40 Australia/Melbourne] PHP Fatal error:  Call to undefined function finfo_open() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 2
+[18-Jun-2013 14:33:54 Australia/Melbourne] PHP Fatal error:  Call to undefined function finfo_open() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 2
+[18-Jun-2013 14:34:30 Australia/Melbourne] PHP Fatal error:  Call to undefined function finfo_open() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 2
+[18-Jun-2013 14:50:16 Australia/Melbourne] PHP Fatal error:  Call to undefined function mime_content_type() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 6
+[18-Jun-2013 14:50:19 Australia/Melbourne] PHP Fatal error:  Call to undefined function mime_content_type() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 6
+[18-Jun-2013 14:55:47 Australia/Melbourne] PHP Fatal error:  Call to undefined function mime_content_type() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 6
+[18-Jun-2013 14:56:00 Australia/Melbourne] PHP Fatal error:  Call to undefined function mime_content_type() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 6
+[18-Jun-2013 14:56:16 Australia/Melbourne] PHP Fatal error:  Call to undefined function mime_content_type() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 6
+[18-Jun-2013 14:56:23 Australia/Melbourne] PHP Fatal error:  Call to undefined function mime_content_type() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 6
+[18-Jun-2013 14:56:28 Australia/Melbourne] PHP Fatal error:  Call to undefined function mime_content_type() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 6
+[18-Jun-2013 15:00:18 Australia/Melbourne] PHP Fatal error:  Call to undefined function mime_content_type() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 6
+[18-Jun-2013 15:00:38 Australia/Melbourne] PHP Fatal error:  Call to undefined function mime_content_type() in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 6
+[18-Jun-2013 15:19:22 Australia/Melbourne] PHP Fatal error:  Class 'finfo' not found in /home/mbrands/public_html/skope/app/View/Files/view.ctp on line 10

@@ -1,0 +1,78 @@
+/* ------------------------------------------------------------------ *\
+Component: Forms;
+Version: 1.0.0;
+Author: Traffic;
+Author URI: http://traffic.com.au/;
+
+Base styles for the forms
+\* ------------------------------------------------------------------ */
+
+
+/* GENERIC ---------------------------------------------------------- */
+
+
+/* BUTTONS ---------------------------------------------------------- */
+
+input[type="checkbox"] {
+	float: left;
+	margin-right: 10px;	
+}
+
+input[type="submit"].button {
+	margin-top: 20px;
+}
+
+.button {
+	border: none;
+	box-shadow: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 17px;
+}
+
+.button-small-delete {
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+
+.button-small-download {
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+
+	.button-small-download {
+		padding: 10px 17px;
+		background: url(/img/icon-download.png) center center no-repeat #8BC53F;
+		text-indent: -9999px;
+		white-space: nowrap;
+	}
+
+}
+
+/* ICONS ------------------------------------------------------------ */
+
+
+i {
+	padding-left: 25px;
+}
+
+i.add {
+	background: url(/img/icon-add.png) 0 center no-repeat;
+}
+
+i.edit {
+	background: url(/img/icon-edit.png) 0 center no-repeat;
+}
+
+i.invite {
+	background: url(/img/icon-invite.png) 0 center no-repeat;
+}
+
+i.delete {
+	background: url(/img/icon-delete.png) 0 center no-repeat;
+}
+
+i.upload {
+	background: url(/img/icon-upload.png) 0 center no-repeat;
+}

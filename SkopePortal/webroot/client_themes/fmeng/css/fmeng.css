@@ -1,0 +1,413 @@
+/* ------------------------------------------------------------------ *\
+Component: FM;
+Version: 1.0.0;
+Author: Traffic;
+Author URI: http://traffic.com.au/;
+
+FM styles for the website
+\* ------------------------------------------------------------------ */
+
+
+/* GENERIC ---------------------------------------------------------- */
+
+
+body {
+	color: #000000;
+	background: #FFFFFF;
+	font-family: Varela Round, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: Varela Round, Helvetica, Arial, sans-serif;
+}
+
+input[type="text"], input[type="password"],
+input[type="date"], input[type="datetime"],
+input[type="datetime-local"], input[type="month"],
+input[type="week"], input[type="email"],
+input[type="number"], input[type="search"],
+input[type="tel"], input[type="time"],
+input[type="url"], input[type="file"],
+textarea, p {
+	font-family: Varela Round, Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+label {
+	font-family: Varela Round, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #191919;
+}
+
+select {
+	font-family: Varela Round, Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
+.error-message {
+	color: #ee3340;
+}
+
+.message {
+	color: #ffffff;
+	border-radius: 4px;
+	background: #ff6c2f;
+} .user-login .message {
+	margin-bottom: 15px;
+}
+
+
+.message-warning {
+	background: #ff0000;
+}
+
+/* GRID ------------------------------------------------------------- */
+
+
+/* HEADER ----------------------------------------------------------- */
+
+
+header[role=banner] {
+	color: #373737;
+	background: #e1e1e1;
+}
+
+.header a {
+	color: #373737;
+}
+
+.header li a {
+	border-bottom: 1px solid #e1e1e1;
+} .header li a:hover {
+	color: #373737;
+	border-bottom: 1px solid #ff6c2f;
+}
+
+.navigation-toggle .toggle:hover {
+	border-bottom: 1px solid #ff6c2f;
+}
+
+.navigation-toggle.toggle-open .toggle {
+	color: #373737;
+	border-bottom: 1px solid #ff6c2f;
+}
+
+
+/* SEARCH ----------------------------------------------------------- */
+
+
+div[role=search] {
+	background: #e1e1e1;
+}
+
+
+/* MAIN ------------------------------------------------------------- */
+
+
+/* FOOTER ----------------------------------------------------------- */
+
+
+/* LOGIN ------------------------------------------------------------ */
+
+
+.user-login {
+	background: #f0f0f0;
+}
+
+.login form {
+	border-top: 1px solid #ff6c2f;
+}
+
+.forgot-password {
+	font-size: 14px;
+	text-decoration: underline;
+	color: #191919;
+} .forgot-password:hover, .forgot-password:focus {
+	color: #191919;
+}
+
+.login .button {
+	font-size: 17px;
+	background-color: #ff6c2f;
+} .login .button:hover, .login .button:focus {
+	background-color: #de5f2a;
+}
+
+
+/* FORGOT PASSWORD -------------------------------------------------- */
+
+
+/* CLIENT INDEX ----------------------------------------------------- */
+
+
+.inner-client-grid {
+	border: 1px solid #efefef;
+	cursor: pointer;
+} .inner-client-grid:hover {
+	border: 1px solid #dcd9d9;
+} .inner-client-grid:hover .client-detail {
+	background: #dcd9d9;
+} .add-new .inner-client-grid {
+	border: none;
+}
+
+.client-logo.add-new-grid {
+	background: url(../img/add-client.png) no-repeat center center;
+	background-size: contain;
+} .client-logo.add-new-grid:hover {
+	background: url(../img/add-client-hover.png) no-repeat center center;
+	background-size: contain;
+}
+
+.client-detail {
+	background: #efefef;
+}
+
+
+/* CLIENT VIEW ------------------------------------------------------ */
+
+
+.cell {
+	border: 1px solid #dcd9d9;
+}
+
+.project-list h4 {
+	background: #efefef;
+} .project-list a:hover h4 {
+	color: #ff6c2f;
+}
+
+.project-list .recent-file {
+	font-family: Varela Round, Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	background: #191919;
+}
+
+.states-list {
+	background: #efefef;
+	border: 1px solid #dcd9d9;
+}
+
+
+/* CLIENT INVITE ---------------------------------------------------- */
+
+
+/* PROJECT VIEW ----------------------------------------------------- */
+
+
+.file-types .file-type {
+	background: #efefef;
+	border: 1px solid #dcd9d9;
+	border-bottom: 0;
+}
+
+.file-type h3 {
+	color: #191919;
+}
+
+.file-types .file-type.current {
+	background: #191919;
+	border: 1px solid #191919;
+	border-bottom: 0;
+}
+
+.file-types .file-type.current h3 {
+	color: #FFFFFF;
+}
+
+.file-count {
+	color: #FFFFFF;
+	background: #191919;
+	font-family: Varela Round, Helvetica, Arial, sans-serif;
+}
+
+.file-list {
+	border: 0;
+}
+
+.file-list th {
+	background: #ee3340;
+	color: #ffffff;
+	font-family: Arial, sans-serif;
+}
+
+
+/* USER MANAGEMENT -------------------------------------------------- */
+
+.user-management-order {
+	padding: 2px 20px 2px 2px;
+	background: url(../img/icon-arrow-right.png) no-repeat right center;
+	color: #ffffff;
+}
+
+.user-management-order:focus,
+.user-management-order:hover {
+	color: #f0f0f0;
+}
+
+.user-management-order.current {
+	background: url(../img/icon-arrow-bottom.png) no-repeat right center;
+}
+
+.user-list th {
+	font-family: Varela Round, Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	background: #373737;
+}
+
+.user-list .button-secondary,
+.user-list .button-secondary:focus {
+	color: #000000;
+	background-color: #e1e1e1;
+} .user-list .button-secondary:hover,
+.user-list .button-secondary.active {
+	color: #000000;
+	background-color: #aaaaaa;
+}
+
+/* SEARCH RESULT ---------------------------------------------------- */
+
+
+/* FILE SEARCH ------------------------------------------------------ */
+
+
+.search-list th {
+	font-family: Varela Round, Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	background: #373737;
+}
+
+
+/* PAGINATION ------------------------------------------------------- */
+
+
+.pagination {
+	margin-top: 20px;
+	padding-top: 10px;
+	text-align: center;
+	border-top: 1px solid #ff6c2f;
+}
+
+.pagination-counter {
+	display: none;
+}
+
+.pagination li {
+	float: none;
+	display: inline-block;
+}
+
+.pagination li.current a {
+	color: #ff6c2f;
+	background-color: #ebebeb;
+} .pagination li a:hover, .pagination li a:focus {
+	color: #ff6c2f;
+	background-color: #ebebeb;
+}
+
+.pagination li a {
+	color: #252525;
+	font-family: Varela Round, Helvetica, Arial, sans-serif;
+}
+
+.pagination li.unavailable {
+	display: none;
+}
+
+
+/* ------------------------------------------------------------------ *\
+Component: Forms;
+Version: 1.0.0;
+Author: Traffic;
+Author URI: http://traffic.com.au/;
+
+Base styles for the forms
+\* ------------------------------------------------------------------ */
+
+
+/* GENERIC ---------------------------------------------------------- */
+
+
+/* BUTTONS ---------------------------------------------------------- */
+
+
+.button {
+	font-weight: normal;
+	font-family: Varela Round, Helvetica, Arial, sans-serif;
+	border-radius: 4px;
+}
+
+.button-small-download {
+	padding: 10px 20px;
+}
+
+.button-small-delete {
+	background: url(../img/icon-delete-white.png) center center no-repeat #b7b7b7;
+}
+
+.button-success {
+	background-color: #ff6c2f;
+} .button-success:hover, .button-success:focus,
+.button-success[disabled], .button-success[disabled]:hover {
+	background-color: #de5f2a;
+}
+
+.button-alert {
+	background-color: #ee3340;
+} .button-alert:hover, .button-alert:focus {
+	background-color: #c12b36;
+}
+
+.button-secondary {
+	color: #000000;
+	background-color: #e1e1e1;
+} .button-secondary:hover, .button-secondary:focus {
+	color: #000000;
+	background-color: #aaaaaa;
+}
+
+
+/* ICONS ------------------------------------------------------------ */
+
+.button i {
+	display: none;
+}
+
+
+
+
+/* ------------------------------------------------------------------ *\
+Component: Modules;
+Version: 1.0.0;
+Author: Traffic;
+Author URI: http://traffic.com.au/;
+
+Base styles for the modules
+\* ------------------------------------------------------------------ */
+
+/* GENERIC ---------------------------------------------------------- */
+
+
+/* SEARCH  ---------------------------------------------------------- */
+
+
+.top-search {
+	background-color: #e1e1e1;
+}
+
+
+/* BREADCRUMBS ------------------------------------------------------ */
+
+
+.breadcrumbs {
+	border-bottom: 1px solid #ff6c2f;
+}
+
+.breadcrumbs li a, .breadcrumbs li span {
+	color: #898989;
+}
+
+.breadcrumbs li:before {
+	color: #898989;
+}

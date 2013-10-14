@@ -1,0 +1,1 @@
+<iframe src ="/ajaxplorer" width="100%" height="550px"></iframe>

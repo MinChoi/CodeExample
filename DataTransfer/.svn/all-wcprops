@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/programming/!svn/ver/9171/trunk/aj2010/Interface/aj2007/DataTransfer
+END
+DataTransferDBStatic.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/programming/!svn/ver/9013/trunk/aj2010/Interface/aj2007/DataTransfer/DataTransferDBStatic.php
+END
+DataTransfer.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/programming/!svn/ver/9171/trunk/aj2010/Interface/aj2007/DataTransfer/DataTransfer.php
+END
+DataTransferInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/programming/!svn/ver/9259/trunk/aj2010/Interface/aj2007/DataTransfer/DataTransferInterface.php
+END
+DataTransferConfig.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/programming/!svn/ver/9171/trunk/aj2010/Interface/aj2007/DataTransfer/DataTransferConfig.php
+END
+DataTransferDB.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/programming/!svn/ver/9171/trunk/aj2010/Interface/aj2007/DataTransfer/DataTransferDB.php
+END
+NSW_DB_connect.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/programming/!svn/ver/9171/trunk/aj2010/Interface/aj2007/DataTransfer/NSW_DB_connect.php
+END
+DataTransferNSW.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/programming/!svn/ver/8777/trunk/aj2010/Interface/aj2007/DataTransfer/DataTransferNSW.php
+END
+DataTransferOtherFunction.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/programming/!svn/ver/9259/trunk/aj2010/Interface/aj2007/DataTransfer/DataTransferOtherFunction.php
+END
+DataTransferFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/programming/!svn/ver/9259/trunk/aj2010/Interface/aj2007/DataTransfer/DataTransferFunctions.php
+END

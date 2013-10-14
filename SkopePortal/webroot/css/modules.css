@@ -1,0 +1,75 @@
+/* ------------------------------------------------------------------ *\
+Component: Modules;
+Version: 1.0.0;
+Author: Traffic;
+Author URI: http://traffic.com.au/;
+
+Base styles for the modules
+\* ------------------------------------------------------------------ */
+
+/* GENERIC ---------------------------------------------------------- */
+
+
+/* SEARCH  ---------------------------------------------------------- */
+
+
+.top-search {
+	background-color: #f0f0f0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.top-search form,
+.top-search input {
+	margin: 0;
+}
+
+.top-search input[type="text"] {
+	position: relative;
+}
+
+.top-search .search-submit {
+	position: absolute;
+	top: 7px;
+	right: 25px;
+	width: 18px;
+	height: 18px;
+	border: none;
+	border-radius: 0;
+	background: #FFFFFF url(/img/icon-search.png) center center no-repeat;
+}
+
+@media only screen and (max-width: 767px) {
+	.top-search {
+		display: none;
+	}
+}
+
+
+/* BREADCRUMBS ------------------------------------------------------ */
+
+
+.breadcrumbs {
+	background: none;
+	border-radius: 0;
+	border: none;
+	display: block;
+	padding: 10px 0;
+}
+
+.breadcrumbs li {
+	max-width: 200px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.breadcrumbs li a, .breadcrumbs li span {
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	text-transform: none;
+}
+
+.breadcrumbs li:before {
+	content: "»";
+}
